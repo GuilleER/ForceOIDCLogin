@@ -21,11 +21,11 @@ class ForceOIDCLogin extends \Piwik\Plugin
         $action = Piwik::getAction();
 
         // Detect if we're already in the OIDC flow to avoid redirect loops
-        $isOidcFlow = ($module === 'RebelOIDC');
+        $isOidcFlow = ($module === 'LoginOIDC');
 
         if (!$isLoggedIn && !$isOidcFlow && empty($_GET['normal'])) {
             // Correct URL to start the OIDC login flow with the provider parameter
-            $oidcUrl = SettingsPiwik::getPiwikUrl() . '?module=RebelOIDC&action=signIn&provider=oidc';
+            $oidcUrl = SettingsPiwik::getPiwikUrl() . '?module=LoginOIDC&action=signIn&provider=oidc';
 
             // Prevent redirect loops
             if (Url::getCurrentUrl() !== $oidcUrl) {
