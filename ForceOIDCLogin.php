@@ -25,7 +25,7 @@ class ForceOIDCLogin extends \Piwik\Plugin
 
         if (!$isLoggedIn && !$isOidcFlow && empty($_GET['normal'])) {
             // Correct URL to start the OIDC login flow with the provider parameter
-            $oidcUrl = SettingsPiwik::getPiwikUrl() . '?module=LoginOIDC&action=signIn&provider=oidc';
+            $oidcUrl = SettingsPiwik::getPiwikUrl() . 'index.php?module=LoginOIDC&action=signin&provider=oidc';
 
             // Prevent redirect loops
             if (Url::getCurrentUrl() !== $oidcUrl) {
