@@ -1,25 +1,25 @@
 {
     "name": "ForceOIDCLogin",
     "description": "Force exclusive OIDC login by redirecting standard login attempts.",
-    "version": "0.1.2",
+    "version": "1.1.0",
     "license": "GPL v3+",
     "theme": false,
     "authors": [
         {
-            "name": "Idafe Hernández Suárez",
-            "email": "tech@ihersua.es",
-            "homepage": "https://ihersua.es"
+            "name": "Guillermo González",
+            "email": "tecnico@escapadarural.com",
+            "homepage": "https://www.escapadarural.com"
         }
     ],
     "require": {
         "php": ">=8.0.0",
         "matomo": ">=5.0.0-stable,<6.0.0-b1"
     },
-    "homepage": "https://github.com/ihersua/ForceOIDCLogin",
+    "homepage": "https://github.com/GuilleER/ForceOIDCLogin",
     "keywords": ["OIDC", "SSO", "Login", "Authentication"],
     "support": {
         "email": "tech@ihersua.es",
-        "issues": "https://github.com/ihersua/ForceOIDCLogin/issues",
-        "source": "https://github.com/ihersua/ForceOIDCLogin"
+        "issues": "https://github.com/GuilleER/ForceOIDCLogin/issues",
+        "source": "https://github.com/GuilleER/ForceOIDCLogin"
     }
 }
